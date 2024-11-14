@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>武汉热干面</title>
+    <style>
+        body {
+            font-family: '微软雅黑', Arial, sans-serif;
+            background-color: #f0f0f0; /* 浅灰色背景 */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2C3E50; /* 更深的蓝色背景 */
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #FFD700; /* 金色字体 */
+        }
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 0;
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid #2C3E50; /* 与头部背景相同的颜色 */
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav a {
+            color: #2C3E50; /* 深蓝色链接 */
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease; /* 平滑过渡效果 */
+        }
+        nav a:hover {
+            color: #FFD700; /* 鼠标悬停时金色 */
+        }
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+        .card {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 更深的阴影效果 */
+            margin-bottom: 30px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px; /* 圆角卡片 */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* 平滑过渡效果 */
+        }
+        .card:hover {
+            transform: translateY(-5px); /* 鼠标悬停时上移 */
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* 鼠标悬停时阴影效果 */
+        }
+        .card img, .gallery img {
+            max-width: 100%; /* 确保图片不超出容器宽度 */
+            height: auto; /* 保持图片原始比例 */
+            margin-bottom: 15px;
+            border-radius: 8px; /* 圆角图片 */
+        }
+        .card h3 {
+            margin: 0 0 15px 0;
+            color: #2C3E50; /* 深蓝色标题 */
+            font-size: 1.8em;
+        }
+        .card p {
+            margin: 5px 0;
+            color: #555555; /* 深灰色字体 */
+            font-size: 16px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .gallery img {
+            width: 30%; /* 每个图片占用30%的宽度 */
+            height: auto;
+            object-fit: cover; /* 保持图片比例，裁切多余部分 */
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #2C3E50; /* 与头部背景相同的颜色 */
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .container {
+                width: 90%;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                font-size: 16px;
+            }
+            .card {
+                padding: 20px;
+            }
+            .card h3 {
+                font-size: 1.5em;
+            }
+            .card p {
+                font-size: 14px;
+            }
+            .gallery img {
+                width: 45%; /* 手机屏幕上每行两个图片 */
+            }
+            footer {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>武汉热干面</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">回主页</a></li>
+                <li><a href="../subweb/热干面.html">热干面</a></li>
+                <li><a href="../subweb/豆皮.html">豆皮</a></li>
+                <li><a href="../subweb/武昌鱼.html">武昌鱼</a></li>
+                <li><a href="../subweb/鸭脖.html">鸭脖</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+            <img src="images2/热干面2.jpg" alt="豆皮"/>
+            <h3>热干面</h3>
+            <p>热干面是武汉人早餐的首选，以其独特的口感和风味深受人们喜爱。</p>
+            <p>热干面是武汉最具代表性的早点之一，以其独特的制作方式和口味深受当地人和游客的喜爱。这种面条在制作过程中会先煮熟，然后淋上香油拌匀，晾干备用。食用前再次烫热，加入芝麻酱、葱花、酸豆角、辣椒油等调料，拌匀后即可食用。热干面的特点是面条筋道、酱香浓郁，既方便又美味，是武汉人早餐的不二之选。</p>
+        </div>
+        <div class="gallery">
+            <!-- 在这里添加更多的图片 -->
+            <img src="images2/热干面3.jpg" alt="武汉美食"/>
+            <img src="images2/热干面4.jpg" alt="武汉美食"/>
+            <img src="images2/热干面5.jpg" alt="武汉美食"/>
+            <!-- 根据需要添加更多图片 -->
+        </div>
+    </div>
+    <footer>
+        <p>cs2402 覃锐谦</p>
+    </footer>
+</body>
+</html>
